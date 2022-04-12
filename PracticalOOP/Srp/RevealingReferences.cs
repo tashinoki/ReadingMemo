@@ -9,10 +9,13 @@
             Wheels = Wheelify(data);
         }
 
+        public int Diameter(int rim, int tire)
+            => rim + tire * 2;
+
         internal int[] Diameters()
             => Array.ConvertAll(
                 Wheels,
-                new Converter<Wheel, int>((w) => w.Rim + w.Tire * 2));
+                new Converter<Wheel, int>((w) => Diameter(w.Rim, w.Tire)));
 
         private Wheel[] Wheelify(int[][] data)
             => Array.ConvertAll(
