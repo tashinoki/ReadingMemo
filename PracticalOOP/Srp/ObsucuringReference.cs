@@ -13,6 +13,8 @@
         {
             return Array.ConvertAll(
                 Data,
+                // [0]: リム
+                // [1]: タイヤ
                 new Converter<int[], int>((d) => d[0] + d[1] * 2));
         }
     }
