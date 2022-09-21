@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticalOOP", "PracticalOO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureByDesign", "SecureByDesign\SecureByDesign.csproj", "{DDF5ED21-279B-4886-BA17-C883CF6A9EC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyCode", "LegacyCode\LegacyCode.csproj", "{12825473-F0EE-4D64-BC70-444E12A8ADC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacyCode", "LegacyCode\LegacyCode.csproj", "{12825473-F0EE-4D64-BC70-444E12A8ADC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingMemo", "ReadingMemo\ReadingMemo.csproj", "{80871212-4C39-4839-938D-391E5178A414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{12825473-F0EE-4D64-BC70-444E12A8ADC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12825473-F0EE-4D64-BC70-444E12A8ADC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12825473-F0EE-4D64-BC70-444E12A8ADC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80871212-4C39-4839-938D-391E5178A414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80871212-4C39-4839-938D-391E5178A414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80871212-4C39-4839-938D-391E5178A414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80871212-4C39-4839-938D-391E5178A414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
