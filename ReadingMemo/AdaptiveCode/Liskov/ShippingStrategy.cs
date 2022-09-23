@@ -12,7 +12,7 @@ internal class ShippingStrategy
         )
     {
         if (packageWeight < 0)
-            throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException(nameof(packageWeight), "Package weight must be positive and nonzero");
 
         return decimal.MinusOne;
     }
