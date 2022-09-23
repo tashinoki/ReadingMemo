@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ReadingMemo.AdaptiveCode
+﻿namespace ReadingMemo.AdaptiveCode
 {
-    internal class Main
+    internal static class Main
     {
+        public static void Run()
+        {}
     }
 }
