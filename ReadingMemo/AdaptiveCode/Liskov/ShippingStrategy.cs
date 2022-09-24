@@ -5,17 +5,17 @@ namespace ReadingMemo.AdaptiveCode.Liskov;
 
 internal class ShippingStrategy
 {
-    protected decimal flatRate;
+    private decimal _flatRate;
 
     public decimal FlatRate
     {
-        get => flatRate;
+        get => _flatRate;
         set
         {
             if(value < 0)
                 throw new ArgumentOutOfRangeException(nameof(value), "");
 
-            flatRate = value;
+            _flatRate = value;
         }
     }
 
@@ -37,3 +37,11 @@ internal class ShippingStrategy
     }
 }
 
+internal class WorldWideShippingCost : ShippingStrategy
+{
+    public new decimal FlatRate
+    {
+        get => base.FlatRate;
+        set => base.FlatRate = value;
+    }
+}
