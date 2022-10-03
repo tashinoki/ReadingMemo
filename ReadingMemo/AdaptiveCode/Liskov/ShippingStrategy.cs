@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics.Contracts;
+using System.Drawing;
 using System.Globalization;
 
 namespace ReadingMemo.AdaptiveCode.Liskov;
@@ -27,11 +28,15 @@ internal class ShippingStrategy
     {
         if (packageWeight < 0)
             throw new ArgumentOutOfRangeException(nameof(packageWeight), "Package weight must be positive and nonzero");
+        //Contract.Requires<ArgumentOutOfRangeException>(
+        //    packageWeight > 0,
+        //    "Package weight must be positive and nonzero");
 
         var shippingCost = decimal.MinusOne;
 
         if (shippingCost < 0)
             throw new ArgumentOutOfRangeException(nameof(shippingCost), "");
+        //Contract.Ensures(Contract.Result<decimal>() > 0);
 
         return shippingCost;
     }
