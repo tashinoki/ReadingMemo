@@ -20,6 +20,12 @@ internal class ShippingStrategy
         }
     }
 
+    [ContractInvariantMethod]
+    private void ClassInvaliant()
+    {
+        Contract.Invariant(_flatRate > 0, "");
+    }
+
     public decimal CalculateShippingCost(
         float packageWeight,
         Size packageDimensions,
