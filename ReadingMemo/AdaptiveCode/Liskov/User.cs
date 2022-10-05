@@ -2,7 +2,7 @@
 
 internal class User: Entity
 {
-    public Guid Id { get; init; }
+    public string EmailAddress { get; private init; }
 
-    public string Name { get; private set; }
+    public DateOnly BirthDate { get; private set; }
 }
